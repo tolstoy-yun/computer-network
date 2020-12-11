@@ -293,7 +293,7 @@ int main() {
 		cout << "当前文件已发送成功" << endl;
 		int trans_time = (file_end - file_begin) / CLOCKS_PER_SEC;
 		cout << "传输时间为" << trans_time << "秒" << endl;
-		cout << "平均吞吐率为" << (fileLen / 1024) / trans_time << "Kbps" << endl;
+		cout << "平均吞吐率为" << (fileLen / 1000) / trans_time << "Kbps" << endl;
 	}
 	//关闭socket
 	closesocket(s_send);
